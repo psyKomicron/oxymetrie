@@ -1,0 +1,2 @@
+void integrationTest(char* str);
+

@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# vs2019
+Debug
+Data.txt
+*.sln
+*.user
+.vs
