@@ -149,15 +149,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="affichage.c" />
+    <ClCompile Include="circ_buff.c" />
+    <ClCompile Include="fichiers.c" />
     <ClCompile Include="fir.c" />
     <ClCompile Include="integration.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="affichage.h" />
+    <ClInclude Include="circ_buff.h" />
     <ClInclude Include="define.h" />
+    <ClInclude Include="fichiers.h" />
     <ClInclude Include="fir.h" />
     <ClInclude Include="integration.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="record1.dat" />
+    <None Include="record1_bin.dat" />
+    <None Include="record1_fir.dat" />
+    <None Include="record1_iir.dat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

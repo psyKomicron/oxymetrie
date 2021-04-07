@@ -27,6 +27,12 @@
     <ClCompile Include="fir.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="fichiers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="circ_buff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="define.h">
@@ -41,5 +47,25 @@
     <ClInclude Include="fir.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="fichiers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="circ_buff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="record1_bin.dat">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="record1_fir.dat">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="record1_iir.dat">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="record1.dat">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

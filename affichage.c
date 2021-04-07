@@ -1,11 +1,11 @@
 #include "affichage.h"
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 void affichage(oxy myOxy)
 {
-	// write in file to do shit
-	while (isDataFileOpen());
+	if (lock()) return;
 
 	FILE* filePtr;
 	errno_t res;
@@ -31,7 +31,14 @@ void affichage(oxy myOxy)
 	}
 }
 
-bool isDataFileOpen()
+bool lock()
 {
+	FILE* file;
+	if (file = fopen(".verrouData", "r"))
+	{
+		fclose(file);
+		return true;
+	}
+
 	return false;
 }
