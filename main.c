@@ -6,17 +6,12 @@
 #include "affichage.h"
 #include "fir.h"
 #include "fichiers.h"
+#include "mesure.h"
+#include "integration.h"
 
 int main(int argc, char* argv[])
 {
-    absorp lastValue = firTest(NULL);
-    printf("%f", lastValue.acr);
-    printf("%c", '\n');
-    printf("%f", lastValue.dcr);
-
-    oxy mesure = { 10, 92 };
-    affichage(mesure);
-    
+    integrationTest("record1_bin.dat");
     return 0;
 }
 

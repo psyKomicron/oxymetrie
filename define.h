@@ -1,6 +1,10 @@
 #ifndef DEFINE_H
 #define DEFINE_H
 
+#define ERR_FILE_CORRUPTED		1
+#define ERR_SUCCESS				0
+#define EOL						'\n'
+
 typedef struct
 {
 	float acr;
@@ -14,6 +18,9 @@ typedef	struct
 	int spo2;
 	int pouls;
 } oxy;
+
+typedef unsigned int uint;
+
 #endif // !DEFINE_H
 
 

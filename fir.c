@@ -63,15 +63,17 @@ float FIR_TAPS[51] = {
 absorp fir(absorp data)
 {
 	// shift
-	for (size_t i = 51 - 1; i >= 1; i--)
+    size_t i;
+	for (i = 51 - 1; i >= 1; i--)
 	{
 		buffer[i] = buffer[i - 1];
 	}
 	buffer[0] = data;
 	
 
+    size_t k;
 	float acr = 0., acir = 0.;
-	for (size_t k = 0; k < 51; k++)
+	for (k = 0; k < 51; k++)
 	{
 		acr += FIR_TAPS[k] * buffer[k].acr;
 		acir += FIR_TAPS[k] * buffer[k].acir;
@@ -84,21 +86,17 @@ absorp fir(absorp data)
 
 absorp firTest(char* str)
 {
-	FILE* record1Dat = openFile("record1.dat");
+	FILE* record1Dat = initFichier(str);
 	int res = 0;
 
     absorp input, lastValue = { 0, 0 };
 	while (res != EOF)
 	{
-		input = readRecordFile(record1Dat, &res);
+		input = lireFichier(record1Dat, &res);
         if (res != EOF)
         {
             lastValue = fir(input);
         }
-        printf("%f", lastValue.acir);
-        printf("%c", ', ');
-        printf("%f", lastValue.acr);
-        printf("%c", '\n');
 	}
 
 	fclose(record1Dat);

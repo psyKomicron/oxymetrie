@@ -30,7 +30,13 @@
     <ClCompile Include="fichiers.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="circ_buff.c">
+    <ClCompile Include="mesure.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -50,7 +56,13 @@
     <ClInclude Include="fichiers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="circ_buff.h">
+    <ClInclude Include="mesure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lecture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

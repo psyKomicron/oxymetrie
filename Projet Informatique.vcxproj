@@ -149,19 +149,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="affichage.c" />
-    <ClCompile Include="circ_buff.c" />
     <ClCompile Include="fichiers.c" />
     <ClCompile Include="fir.c" />
     <ClCompile Include="integration.c" />
+    <ClCompile Include="iir.c" />
+    <ClCompile Include="lecture.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="mesure.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="affichage.h" />
-    <ClInclude Include="circ_buff.h" />
     <ClInclude Include="define.h" />
     <ClInclude Include="fichiers.h" />
     <ClInclude Include="fir.h" />
     <ClInclude Include="integration.h" />
+    <ClInclude Include="iir.h" />
+    <ClInclude Include="lecture.h" />
+    <ClInclude Include="mesure.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="record1.dat" />
