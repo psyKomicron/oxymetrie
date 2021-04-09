@@ -3,7 +3,7 @@
 
 #define ERR_FILE_CORRUPTED		1
 #define ERR_SUCCESS				0
-#define EOL						'\n'
+#define EOL						0x0d
 
 typedef struct
 {

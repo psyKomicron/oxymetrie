@@ -47,7 +47,7 @@ void integration(FILE* filePoint)
         }
         else if (ret == ERR_SUCCESS)
         {
-            //printf("%f , %f , %f , %f\n", abs.acr, abs.dcr, abs.acir, abs.dcir);
+            printf("%f , %f , %f , %f\n", abs.acr, abs.dcr, abs.acir, abs.dcir);
 
             if (mesure(iir(fir(abs), oldIIR), &mesureOxy) == ERR_SUCCESS)
             {

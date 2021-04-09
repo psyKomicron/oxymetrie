@@ -21,17 +21,19 @@ int mesure(absorp input, oxy* mesure)
 {
 	if (crossedZero(input.acr))
 	{
-		if (counting && zeros == 4) // full length period
+		if (counting) // full length period
 		{
-			float bpm = 30000 / (counter / 2);
-			//bpmAvg = (bpm + bpmAvg) / 2;
-			mesure->pouls = bpm;
+			if (zeros == 4)
+			{
+				float bpm = 30000 / (counter / 2);
+				//bpmAvg = (bpm + bpmAvg) / 2;
+				mesure->pouls = bpm;
 
-			counter = 0;
-			counting = false;
-			zeros = 0;
-
-			return 0;
+				counter = 0;
+				counting = false;
+				zeros = 0;
+				return 0;
+			}
 		}
 		else
 		{

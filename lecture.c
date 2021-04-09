@@ -14,6 +14,7 @@ absorp lecture(FILE* filePoint, int* retState)
     bool notBreak = true;
     uint i = 0;
 
+
     bool valid = true;
     uint commas = 0, fieldsNumber = 0, fieldSize = 0;
 
@@ -99,15 +100,15 @@ absorp lecture(FILE* filePoint, int* retState)
         }
 
         myAbs.acr = fields[0] - 2048;
-        myAbs.dcr = fields[1] - 2048;
+        myAbs.dcr = fields[1];
         myAbs.acir = fields[2] - 2048;
-        myAbs.dcir = fields[3] - 2048;
+        myAbs.dcir = fields[3];
     }
     else
     {
         notBreak = true;
         while ((c = fgetc(filePoint)) != EOL && c != EOF);
-        c = fgetc(filePoint);
+        //c = fgetc(filePoint);
     }
 
     return myAbs;

@@ -11,8 +11,11 @@
 
 int main(int argc, char* argv[])
 {
-    integrationTest("record1_bin.dat");
-    return 0;
+	int test = 0;
+	printf("Entrez une valeur SVP : ");
+	scanf("%d", &test);
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
